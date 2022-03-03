@@ -52,6 +52,16 @@ lxc launch --profile default --profile kubernetes ubuntu:20.04 worker2
  ..
 ```
 
+## Creating Kubernetes cluster using Ansible
+```
+ansible-playbook users.yml
+ansible-playbook install-k8s.yaml
+ansible-playbook master.yaml
+ansible-playbook join-workers.yaml
+```
+
+
+
 
 
 
