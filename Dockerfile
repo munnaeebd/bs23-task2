@@ -1,7 +1,7 @@
 FROM composer:2.2.7 as build
 
 WORKDIR /app
-COPY ./app1/src/* /app
+COPY ./app1/src/ /app
 RUN composer install
 
 FROM php:7.4.0-apache
